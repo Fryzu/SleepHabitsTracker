@@ -14,7 +14,7 @@ import kotlinx.coroutines.launch
 
 
 /**
- * Zapewnie dostep do danych naszej applikacji oraz persystencje podczas jej dzialania
+ * Zapewnie dostep applikacji dostep do danych oraz persystencje je podczas jej dzialania
  */
 class MainViewModel(application: Application): AndroidViewModel(application) {
 
