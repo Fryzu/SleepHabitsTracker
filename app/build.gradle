@@ -73,4 +73,7 @@ dependencies {
 
     // Google Play Services
     implementation 'com.google.android.gms:play-services-location:18.0.0'
+
+    // Permissions
+    implementation 'com.vmadalin:easypermissions-ktx:1.0.0'
 }

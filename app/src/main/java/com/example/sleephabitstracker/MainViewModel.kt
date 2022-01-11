@@ -20,8 +20,8 @@ class MainViewModel(application: Application): AndroidViewModel(application) {
 
     private val repository: SleepHabitsTrackerRepository
 
-    private val getAllSleepEvents: LiveData<List<SleepEvent>>
-    private val subscribedToSleepEvents: LiveData<Boolean>
+    val getAllSleepEvents: LiveData<List<SleepEvent>>
+    val subscribedToSleepEvents: LiveData<Boolean>
 
     init {
         val sleepEventDAO = SleepHabitsTrackerDatabase.getInstance(application).sleepEventDAO()
