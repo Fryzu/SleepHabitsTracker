@@ -57,19 +57,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        mainViewModel.getAllSleepEvents.observe(this) { sleepEvents ->
-            Log.d("MainActivity", "sleepEvents: $sleepEvents")
-
-            if (sleepEvents.isNotEmpty()) {
-                // Constructor isn't accessible for [SleepSegmentEvent], so we just output the
-                // database table version.
-                sleepEventsOutput = sleepEvents.joinToString {
-                    "\t$it\n"
-                }
-                updateOutput()
-            }
-        }
-
         sleepPendingIntent = SleepEventsReceiver.createSleepReceiverPendingIntent(applicationContext)
     }
 

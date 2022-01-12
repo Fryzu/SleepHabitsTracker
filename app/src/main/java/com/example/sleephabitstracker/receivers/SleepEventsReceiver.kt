@@ -15,6 +15,8 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 
+private const val TAG = "SleepEventsReceiver"
+
 /**
  * Nasłuchuje na zdarzenia wykrycia snu i zapisuje je w bazie danych
  */
@@ -54,7 +56,6 @@ class SleepEventsReceiver : BroadcastReceiver() {
     }
 
     companion object {
-        const val TAG = "SleepEventsReceiver"
         fun createSleepReceiverPendingIntent(context: Context): PendingIntent {
             val sleepIntent = Intent(context, SleepEventsReceiver::class.java)
             return PendingIntent.getBroadcast(

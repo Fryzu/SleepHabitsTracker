@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.2713541666666667" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_todo.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/sleep_item.xml" value="0.25625" />
+        <entry key="app/src/main/res/layout/sleep_item_list.xml" value="0.2421875" />
       </map>
     </option>
   </component>
