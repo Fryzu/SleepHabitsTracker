@@ -6,7 +6,21 @@
     android:layout_height="match_parent"
     android:id="@+id/main_activity"
     tools:context=".MainActivity"
-    android:padding="10dp">
+    android:background="@color/primary">
+
+    <TextView
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_marginTop="45dp"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Good night 🌙"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <fragment
         android:id="@+id/sleepItemsFragment"
@@ -16,7 +30,7 @@
         app:layout_constraintBottom_toTopOf="@+id/trackingButtonFragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <fragment
         android:id="@+id/trackingButtonFragment"
