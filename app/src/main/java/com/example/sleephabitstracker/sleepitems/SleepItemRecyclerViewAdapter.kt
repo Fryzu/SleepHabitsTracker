@@ -17,7 +17,7 @@ class SleepItemRecyclerViewAdapter(
         return ViewHolder(SleepItemBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
-    private var hourFormatter = DateTimeFormatter.ofPattern("HH mm")
+    private var hourFormatter = DateTimeFormatter.ofPattern("HH:mm")
     private var dateFormatter = DateTimeFormatter.ofPattern("dd LLL uuuu")
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
