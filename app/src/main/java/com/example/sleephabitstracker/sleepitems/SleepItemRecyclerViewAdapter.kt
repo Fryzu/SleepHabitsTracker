@@ -26,10 +26,9 @@ class SleepItemRecyclerViewAdapter(
         val startDate = SleepItem.getDateObjectFromUnix(item.startTimestamp)
         val endDate = SleepItem.getDateObjectFromUnix(item.endTimestamp)
         val duration = Duration.between(startDate, endDate)
-
-        holder.startTime.text = "Start time: ${startDate.format(hourFormatter)}"
-        holder.endTime.text = "End time: ${endDate.format(hourFormatter)}"
-        holder.sleep_duration.text = "${duration.toHours()}h"
+        
+        holder.hoursString.text = "${startDate.format(hourFormatter)} to ${endDate.format(hourFormatter)}"
+        holder.sleepDuration.text = "${duration.toHours()}h"
         holder.startDate.text = startDate.format(dateFormatter)
     }
 
@@ -37,9 +36,8 @@ class SleepItemRecyclerViewAdapter(
 
     inner class ViewHolder(binding: SleepItemBinding) : RecyclerView.ViewHolder(binding.root) {
         val startDate: TextView = binding.startDate
-        val endTime: TextView = binding.endTime
-        val startTime: TextView = binding.startTime
-        val sleep_duration: TextView = binding.sleepDuration
+        val hoursString: TextView = binding.endTime
+        val sleepDuration: TextView = binding.sleepDuration
 
         override fun toString(): String {
             return super.toString() + " '" + startDate.text + "'"

@@ -12,7 +12,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="Subscribe to your sleep"
+        android:text="Track your sleep data"
         android:textSize="22sp"
         android:textColor="@color/primary"
         android:fontFamily="sans-serif-black"
