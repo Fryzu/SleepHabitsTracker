@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/main_activity"
     tools:context=".MainActivity"
-    android:background="@color/primary">
+    android:background="@drawable/background_stars">
 
     <TextView
         android:textColor="@color/white"
